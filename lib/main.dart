@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import recipe.dart
 import 'recipe.dart';
+import 'recipe_detail.dart';
 
 void main() {
   runApp(const Recipe());
@@ -45,7 +46,14 @@ class _MyHomePageState extends State<MyHomePage> {
           //   return Text(MyRecipe.samples[index].label);
           // },
           itemBuilder: (BuildContext context, int index) {
-            return buildRecipeCard(MyRecipe.samples[index]);
+            return GestureDetector(
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => RecipeDetail(recipe: MyRecipe.samples[index]),
+                ),
+              ),
+              child: buildRecipeCard(MyRecipe.samples[index]));
           },
         ),
       ),
