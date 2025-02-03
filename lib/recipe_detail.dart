@@ -37,6 +37,33 @@ class _RecipeDetailState extends State<RecipeDetail> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            const SizedBox(
+              height: 4.0,
+            ),
+            Text(
+              'Servings: ${widget.recipe.servings}',
+              style: const TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const SizedBox(
+              height: 4.0,
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: widget.recipe.ingredients.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Text(
+                    '${widget.recipe.ingredients[index].quantity} ${widget.recipe.ingredients[index].measure} ${widget.recipe.ingredients[index].name}',
+                    style: const TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
