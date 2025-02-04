@@ -1,16 +1,29 @@
-# flutter_application_1
+# Recipe App
 
-A new Flutter project.
+Feel free to use for your Mobile App Development Course at NUST CEME.
 
-## Getting Started
+## How to Clone the Repository
 
-This project is a starting point for a Flutter application.
+Follow these steps to clone this repository to your local machine:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Open Terminal or Command Prompt**
+2. **Navigate to the desired directory**  
+   ```bash
+   cd /path/to/your/directory
+   ```
+3. **Clone the repository**  
+   ```bash
+   git clone <repository-url>
+   ```
+4. **Navigate into the project folder**  
+   ```bash
+   cd recipe-app
+   ```
+5. **Install dependencies (if using Flutter)**  
+   ```bash
+   flutter pub get
+   ```
+6. **Run the app (if using Flutter)**  
+   ```bash
+   flutter run
+   
