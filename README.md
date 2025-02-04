@@ -19,11 +19,11 @@ Follow these steps to clone this repository to your local machine:
    ```bash
    cd recipe-app
    ```
-5. **Install dependencies (if using Flutter)**  
+5. **Install dependencies**  
    ```bash
    flutter pub get
    ```
-6. **Run the app (if using Flutter)**  
+6. **Run the app**  
    ```bash
    flutter run
    
